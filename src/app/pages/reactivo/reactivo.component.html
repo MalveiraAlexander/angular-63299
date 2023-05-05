@@ -1,0 +1,42 @@
+<form [formGroup]="form" (ngSubmit)="save()" class="container-fluid">
+  <div class="row justify-content-center text-center mt-5">
+    <h1>Formularios Reactivos</h1>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-4">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nombre</label>
+        <input required formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre">
+        <form-validator [control]="form.controls['nombre']" name="Nombre"></form-validator>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Apellido</label>
+        <input formControlName="apellido" type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
+        <form-validator [control]="form.controls['apellido']" name="Apellido"></form-validator>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-4">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input formControlName="email" type="email" class="form-control" name="email" id="email" placeholder="example@example.com">
+        <form-validator [control]="form.controls['email']" name="Email"></form-validator>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Edad</label>
+        <input min="0" max="125" formControlName="edad" type="number" class="form-control" name="edad" id="edad" placeholder="Edad">
+        <form-validator [control]="form.controls['edad']" name="Edad"></form-validator>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-auto">
+      <button type="submit" [disabled]="form.invalid" class="btn btn-success">Enviar</button>
+    </div>
+  </div>
+</form>

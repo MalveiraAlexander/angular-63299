@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "name": "Jose",
+      "lastname": "Does",
+      "email": "jdoe@algo.com",
+      "phone": "+1564564587",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jose",
+      "lastname": "Maraz",
+      "email": "jmaraz@algo.com",
+      "phone": ""
+    },
+    {
+      "name": "Mauricio",
+      "lastname": "Llanten",
+      "email": "mllanten@edu.com",
+      "phone": "+5658965478",
+      "id": 3
+    },
+    {
+      "name": "Holaaa",
+      "lastname": "asdasdas",
+      "email": "asdas@asdas",
+      "phone": "+545566552",
+      "id": 4
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin"
+    }
+  ]
+}

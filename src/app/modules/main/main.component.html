@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div *ngIf="searchService.showSearch()" @inOutAnimation class="search-content">
+  <!-- vvvv Solo Angular 16 vvvv -->
+  <app-search-content/>
+</div>
+<div style="margin-top: 70px;">
+  <router-outlet></router-outlet>
+</div>

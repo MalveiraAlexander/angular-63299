@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <p hidden>{{searchService.search()}}</p>
+  <div class="row justify-content-center">
+    <div *ngFor="let item of users()" class="col-12 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-6 align-self-center align-content-center">
+                <p class="m-0">Nombre:</p>
+              </div>
+              <div class="col-6 align-self-center align-content-center">
+                <small class="text-end">{{item.name}}</small>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-6 align-self-center align-content-center">
+                <p class="m-0">Apellido:</p>
+              </div>
+              <div class="col-6 align-self-center align-content-center">
+                <small class="text-end">{{item.lastname}}</small>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-6 align-self-center align-content-center">
+                <p class="m-0">Email:</p>
+              </div>
+              <div class="col-6 align-self-center align-content-center">
+                <small class="text-end">{{item.email}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
